@@ -22,7 +22,7 @@ const ManageOrders = () => {
         const updatedorder = orders.find(order => order._id === id);
         updatedorder.status = 'approved';
 
-        const url = `hhttps://scary-goblin-67655.herokuapp.com/approve/${id}`;
+        const url = `https://scary-goblin-67655.herokuapp.com/approve/${id}`;
         // const url = `http://localhost:5000/approve/${id}`;
         fetch(url, {
             method: 'PUT',
